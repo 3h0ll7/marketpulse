@@ -23,6 +23,8 @@ function MainContent() {
       {showSection('movers') && <Movers />}
       {showSection('calendars') && <Calendars />}
       {showSection('news') && <NewsFeed />}
+      {showSection('forex') && <CurrencyConverter />}
+      {showSection('crypto') && <CryptoOverview />}
     </div>
   );
 }
