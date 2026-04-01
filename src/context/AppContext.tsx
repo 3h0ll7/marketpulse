@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
-export type TabId = 'overview' | 'sectors' | 'movers' | 'calendars' | 'news';
+export type TabId = 'overview' | 'sectors' | 'movers' | 'calendars' | 'news' | 'forex' | 'crypto';
 
 interface SavedView {
   id: string;

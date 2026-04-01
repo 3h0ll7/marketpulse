@@ -12,6 +12,8 @@ const TABS: { id: TabId; label: string }[] = [
   { id: 'movers', label: 'Movers' },
   { id: 'calendars', label: 'Calendars' },
   { id: 'news', label: 'News' },
+  { id: 'forex', label: 'Forex' },
+  { id: 'crypto', label: 'Crypto' },
 ];
 
 export function Header() {
