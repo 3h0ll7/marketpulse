@@ -59,7 +59,7 @@ export function NewsFeed() {
       RSS_FEEDS.map(async (feed) => {
         try {
           const res = await fetch(
-            `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=20`
+            `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`
           );
           if (!res.ok) throw new Error('Failed');
           const data = await res.json();
