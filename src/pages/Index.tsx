@@ -5,6 +5,8 @@ import { SectorHeatmap } from '@/components/SectorHeatmap';
 import { Movers } from '@/components/Movers';
 import { Calendars } from '@/components/Calendars';
 import { NewsFeed } from '@/components/NewsFeed';
+import { CurrencyConverter } from '@/components/CurrencyConverter';
+import { CryptoOverview } from '@/components/CryptoOverview';
 import { WatchlistPanel, NotesPanel } from '@/components/SidebarPanels';
 
 function MainContent() {
