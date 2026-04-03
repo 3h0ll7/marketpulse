@@ -20,7 +20,15 @@ function MainContent() {
 
   return (
     <div className="space-y-4">
-      {showSection('overview') && <MarketOverview />}
+      {showSection('overview') && (
+        <>
+          <MarketOverview />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <FearGreedIndex />
+            <MarketBreadth />
+          </div>
+        </>
+      )}
       {showSection('sectors') && <SectorHeatmap />}
       {showSection('movers') && <Movers />}
       {showSection('calendars') && <Calendars />}
