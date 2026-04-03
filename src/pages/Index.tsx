@@ -1,6 +1,8 @@
 import { AppProvider, useAppContext } from '@/context/AppContext';
 import { Header, MobileTabBar } from '@/components/Header';
 import { MarketOverview } from '@/components/MarketOverview';
+import { FearGreedIndex } from '@/components/FearGreedIndex';
+import { MarketBreadth } from '@/components/MarketBreadth';
 import { SectorHeatmap } from '@/components/SectorHeatmap';
 import { Movers } from '@/components/Movers';
 import { Calendars } from '@/components/Calendars';
