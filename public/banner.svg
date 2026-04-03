@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="50%" style="stop-color:#0d1535"/>
+      <stop offset="100%" style="stop-color:#0a0e27"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4aa"/>
+      <stop offset="50%" style="stop-color:#00b4ff"/>
+      <stop offset="100%" style="stop-color:#7c5cfc"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="gridLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a2344;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#1a2344"/>
+      <stop offset="100%" style="stop-color:#1a2344;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4aa"/>
+      <stop offset="50%" style="stop-color:#00b4ff"/>
+      <stop offset="100%" style="stop-color:#7c5cfc"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="chartClip">
+      <rect x="80" y="80" width="1040" height="240"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)"/>
+
+  <!-- Animated grid dots -->
+  <g opacity="0.15">
+    <g>
+      <circle cx="100" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="200" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="0.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="300" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="500" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="800" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="900" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1000" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1100" cy="100" r="1" fill="#00b4ff">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g>
+      <circle cx="100" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="0.3s" repeatCount="indefinite"/></circle>
+      <circle cx="300" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="0.6s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="0.9s" repeatCount="indefinite"/></circle>
+      <circle cx="500" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="600" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="800" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="2.1s" repeatCount="indefinite"/></circle>
+      <circle cx="900" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="2.4s" repeatCount="indefinite"/></circle>
+      <circle cx="1000" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="1100" cy="200" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="4s" begin="3s" repeatCount="indefinite"/></circle>
+    </g>
+    <g>
+      <circle cx="100" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="0.25s" repeatCount="indefinite"/></circle>
+      <circle cx="300" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="0.5s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="0.75s" repeatCount="indefinite"/></circle>
+      <circle cx="500" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="600" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="1.25s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="800" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="1.75s" repeatCount="indefinite"/></circle>
+      <circle cx="900" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="2s" repeatCount="indefinite"/></circle>
+      <circle cx="1000" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="2.25s" repeatCount="indefinite"/></circle>
+      <circle cx="1100" cy="300" r="1" fill="#00b4ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" begin="2.5s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+
+  <!-- Horizontal grid lines -->
+  <g opacity="0.4">
+    <line x1="80" y1="140" x2="1120" y2="140" stroke="url(#gridLine)" stroke-width="0.5"/>
+    <line x1="80" y1="200" x2="1120" y2="200" stroke="url(#gridLine)" stroke-width="0.5"/>
+    <line x1="80" y1="260" x2="1120" y2="260" stroke="url(#gridLine)" stroke-width="0.5"/>
+    <line x1="80" y1="320" x2="1120" y2="320" stroke="url(#gridLine)" stroke-width="0.5"/>
+  </g>
+
+  <!-- Chart area fill (animated) -->
+  <g clip-path="url(#chartClip)">
+    <path d="M80,280 L160,260 L240,270 L320,220 L400,240 L480,190 L560,210 L640,170 L720,180 L800,140 L880,160 L960,120 L1040,130 L1120,100 L1120,320 L80,320 Z" fill="url(#chartFill)" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="2s" fill="freeze" begin="0.5s"/>
+    </path>
+  </g>
+
+  <!-- Main chart line (animated draw) -->
+  <g clip-path="url(#chartClip)" filter="url(#glow)">
+    <path d="M80,280 L160,260 L240,270 L320,220 L400,240 L480,190 L560,210 L640,170 L720,180 L800,140 L880,160 L960,120 L1040,130 L1120,100" fill="none" stroke="url(#chartLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1600" stroke-dashoffset="1600">
+      <animate attributeName="stroke-dashoffset" from="1600" to="0" dur="2.5s" fill="freeze" begin="0.3s" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </path>
+  </g>
+
+  <!-- Animated pulse dot at chart end -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="2.5s"/>
+    <circle cx="1120" cy="100" r="6" fill="#00d4aa" filter="url(#softGlow)">
+      <animate attributeName="r" values="4;8;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1120" cy="100" r="3" fill="#fff"/>
+  </g>
+
+  <!-- Secondary chart line (red, animated) -->
+  <g clip-path="url(#chartClip)" opacity="0.4">
+    <path d="M80,200 L160,210 L240,195 L320,230 L400,225 L480,250 L560,240 L640,260 L720,255 L800,270 L880,265 L960,280 L1040,275 L1120,290" fill="none" stroke="#ff4466" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1600" stroke-dashoffset="1600" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="1600" to="0" dur="2.5s" fill="freeze" begin="0.6s" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </path>
+  </g>
+
+  <!-- Candlestick bars (animated appear) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="0.3" dur="0.5s" fill="freeze" begin="1.5s"/>
+    <!-- Green candles -->
+    <rect x="155" y="250" width="6" height="20" rx="1" fill="#00d4aa"/>
+    <rect x="315" y="210" width="6" height="20" rx="1" fill="#00d4aa"/>
+    <rect x="475" y="180" width="6" height="20" rx="1" fill="#00d4aa"/>
+    <rect x="635" y="160" width="6" height="20" rx="1" fill="#00d4aa"/>
+    <rect x="795" y="130" width="6" height="20" rx="1" fill="#00d4aa"/>
+    <rect x="955" y="110" width="6" height="20" rx="1" fill="#00d4aa"/>
+    <!-- Red candles -->
+    <rect x="235" y="260" width="6" height="18" rx="1" fill="#ff4466"/>
+    <rect x="395" y="230" width="6" height="18" rx="1" fill="#ff4466"/>
+    <rect x="555" y="200" width="6" height="18" rx="1" fill="#ff4466"/>
+    <rect x="715" y="170" width="6" height="18" rx="1" fill="#ff4466"/>
+    <rect x="875" y="150" width="6" height="18" rx="1" fill="#ff4466"/>
+  </g>
+
+  <!-- Live price ticker (animated) -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="2.8s"/>
+    <rect x="1020" y="82" width="100" height="28" rx="6" fill="#00d4aa" opacity="0.15"/>
+    <text x="1070" y="101" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="13" font-weight="bold">
+      +2.47%
+      <animate attributeName="opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" fill="url(#titleGrad)" font-family="'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="700" letter-spacing="3" opacity="0">
+    MARKET PULSE
+    <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze" begin="0.2s"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="76" text-anchor="middle" fill="#556688" font-family="'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="400" letter-spacing="6" opacity="0">
+    REAL-TIME FINANCIAL DASHBOARD
+    <animate attributeName="opacity" from="0" to="0.7" dur="1s" fill="freeze" begin="0.5s"/>
+  </text>
+
+  <!-- Bottom stats bar -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" fill="freeze" begin="2s"/>
+    <rect x="80" y="345" width="1040" height="1" fill="url(#gridLine)" opacity="0.5"/>
+
+    <!-- S&P -->
+    <text x="130" y="375" text-anchor="middle" fill="#556688" font-family="monospace" font-size="10">S&amp;P 500</text>
+    <text x="130" y="390" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="11" font-weight="bold">5,842.31</text>
+
+    <!-- NASDAQ -->
+    <text x="310" y="375" text-anchor="middle" fill="#556688" font-family="monospace" font-size="10">NASDAQ</text>
+    <text x="310" y="390" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="11" font-weight="bold">18,421.67</text>
+
+    <!-- DOW -->
+    <text x="490" y="375" text-anchor="middle" fill="#556688" font-family="monospace" font-size="10">DOW 30</text>
+    <text x="490" y="390" text-anchor="middle" fill="#ff4466" font-family="monospace" font-size="11" font-weight="bold">42,873.19</text>
+
+    <!-- BTC -->
+    <text x="670" y="375" text-anchor="middle" fill="#556688" font-family="monospace" font-size="10">BTC/USD</text>
+    <text x="670" y="390" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="11" font-weight="bold">96,341.00</text>
+
+    <!-- EUR/USD -->
+    <text x="850" y="375" text-anchor="middle" fill="#556688" font-family="monospace" font-size="10">EUR/USD</text>
+    <text x="850" y="390" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="11" font-weight="bold">1.0847</text>
+
+    <!-- GOLD -->
+    <text x="1030" y="375" text-anchor="middle" fill="#556688" font-family="monospace" font-size="10">GOLD</text>
+    <text x="1030" y="390" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="11" font-weight="bold">2,648.50</text>
+  </g>
+
+  <!-- Scanning line animation -->
+  <rect x="80" y="80" width="2" height="240" fill="#00b4ff" opacity="0.15" rx="1">
+    <animate attributeName="x" from="80" to="1120" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.2;0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
