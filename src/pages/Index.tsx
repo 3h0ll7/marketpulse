@@ -1,6 +1,8 @@
 import { AppProvider, useAppContext } from '@/context/AppContext';
 import { Header, MobileTabBar } from '@/components/Header';
 import { MarketOverview } from '@/components/MarketOverview';
+import { FearGreedIndex } from '@/components/FearGreedIndex';
+import { MarketBreadth } from '@/components/MarketBreadth';
 import { SectorHeatmap } from '@/components/SectorHeatmap';
 import { Movers } from '@/components/Movers';
 import { Calendars } from '@/components/Calendars';
@@ -18,7 +20,15 @@ function MainContent() {
 
   return (
     <div className="space-y-4">
-      {showSection('overview') && <MarketOverview />}
+      {showSection('overview') && (
+        <>
+          <MarketOverview />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <FearGreedIndex />
+            <MarketBreadth />
+          </div>
+        </>
+      )}
       {showSection('sectors') && <SectorHeatmap />}
       {showSection('movers') && <Movers />}
       {showSection('calendars') && <Calendars />}
